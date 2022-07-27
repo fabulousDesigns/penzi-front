@@ -1,0 +1,13 @@
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.7rem;
+}
+form input {
+  width: 400px;
+  padding: 9px 1.5rem;
+  outline: none;
+  border-radius: 2rem;
+  border: 1.2px solid #111;
+}

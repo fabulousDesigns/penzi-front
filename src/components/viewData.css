@@ -1,0 +1,6 @@
+form {
+  flex-direction: row;
+}
+form input {
+  width: 180px;
+}

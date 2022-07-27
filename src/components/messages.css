@@ -1,0 +1,57 @@
+#messages {
+  height: 100vh;
+  width: calc(100vh - 200px);
+  width: 58%;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+/* form */
+/* .form__center {
+  width: 58%;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+} */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.input__box {
+  width: 280px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--color-primary);
+}
+.input__box input,
+textarea {
+  background: transparent;
+  width: 100%;
+  padding: inherit;
+  border-radius: inherit;
+  border: 2px solid var(--color-primary);
+  resize: none;
+}
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-bg);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+}
+/* .btn:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+} */
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}

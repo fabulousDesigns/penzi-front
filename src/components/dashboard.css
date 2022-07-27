@@ -1,0 +1,99 @@
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: var(--color-primary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.d__title {
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  margin: 6px 0;
+  color: var(--color-bg);
+}
+
+.btn__logout {
+  width: 140px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-primary);
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+/* Sidebar links */
+.sidebar .d__links a {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-bg);
+  padding: 16px;
+  margin: 10px 0;
+  text-decoration: none;
+  font-weight: 500;
+}
+#home {
+  width: 100%;
+  height: 100vh;
+}
+.home__header {
+  text-align: center;
+  color: var(--color-primary);
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+
+/* Active/current link */
+/* .sidebar a.active {
+  background-color: var(--color-bg);
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  color: var(--color-primary);
+}
+
+/* Links on mouse-over */
+/* .sidebar a:hover:not(.active) {
+  background-color: rgb(166, 88, 202);
+  color: var(--color-primary);
+} */
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
